@@ -1,0 +1,45 @@
+.page-service{
+    overflow: hidden;
+    width: 320px;
+    
+    @media (min-width: 768px){
+        width: auto;
+    }
+
+    &__header{
+        padding-left: 16px;
+        background-color: #FFFFFF;
+        padding-bottom: 23px;
+        padding-top: 21px;
+    
+        @media (min-width: 768px){
+            padding: 24px;
+        }
+        @media (min-width: 1120px){
+            padding: 24px 32px;
+        }
+    }
+    &__title{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin:0;
+    }
+    &__services{
+        padding-left: 16px;
+        padding-top: 16px;
+        padding-bottom: 50px;
+        position: relative;
+
+        @media (min-width: 768px){
+            padding: 24px;
+            padding-bottom: 42px;
+          }
+          @media (min-width: 1120px){
+            padding: 24px 32px;
+            padding-bottom: 53px;
+          }      
+    }
+}
+

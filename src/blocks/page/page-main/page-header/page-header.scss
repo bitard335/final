@@ -1,0 +1,112 @@
+.page-header{
+  max-height: 88px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #1B1C21;
+
+  @media (min-width: 768px){
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media (min-width: 1120px){
+    padding-left: 33px;
+    padding-top: 42px;
+    justify-content: end;
+    background-color: transparent;
+  }
+
+  &__item{
+    margin-right: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    &:nth-of-type(1){
+      &::after{
+        @media (min-width: 768px){
+          display:inline-block;
+          content: "";
+          margin-left: 16px;
+          margin-right: 5px;
+          height:32px;
+          width: 2px;
+          background-color: rgba(234, 234, 234, 1);
+          border-radius: 30%;
+        }
+    }
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4){
+      @media (min-width: 768px){
+        order: 1;
+      }
+    }
+    &:nth-of-type(3){
+      &::before{
+        display:inline-block;
+        content: "";
+        margin-right: 16px;
+        height:32px;
+        width: 2px;
+        background-color: rgba(234, 234, 234, 1);
+        border-radius: 30%;
+  
+        @media (min-width: 768px){
+          margin-left:8px;
+        }
+        @media (min-width: 1120px){
+          font-weight: 500;
+          content:"Оставить заявку";
+          margin-left:0;
+          margin-right: 8px;
+          width: auto;
+          height: 24px;
+          border-radius: 0;
+          background-color: transparent;
+        }
+      }
+    }
+    &:nth-last-of-type(4){
+      margin-right: 0;
+    }
+    &:nth-of-type(4){
+      &::before{
+        @media (min-width: 1120px){
+          font-weight: 500;
+          content: "Статус ремонта";
+          margin-left:0;
+          margin-right: 8px;
+        }
+    }
+    }
+    &:nth-of-type(5){
+      @media (min-width: 768px){
+        margin-left: auto;;
+      }
+    }
+    &:nth-of-type(5),
+    &:nth-of-type(6),
+    &:nth-of-type(7){
+      display: none;
+      @media (min-width: 768px){
+        display: flex;
+      }
+    }
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(5),
+    &:nth-of-type(6),
+    &:nth-of-type(7){
+      @media (min-width: 1120px){
+        display: none;
+      }
+    }
+}
+  &__button{
+    width: 40px;
+    height: 40px;
+  }
+}
+

@@ -1,0 +1,75 @@
+.repair-brand{
+
+  &__services{
+    &::after{
+      content: "";
+      position: absolute;
+      right: 0%;
+      top: 10%;
+      width: 24px;
+      height: 72px;
+      z-index: 1;
+      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
+  }
+  &__list{
+    display: flex;
+
+    @media (min-width: 768px){
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:24px;
+        row-gap: 16px;
+    }
+    @media (min-width: 1120px){
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:32px;
+    }
+  }
+  &__category{
+    width: 240px;
+
+    @media (min-width: 768px){
+        display: none;
+    }
+    
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6){
+        @media (min-width: 768px){
+            display: block;
+        }
+    }
+    &:nth-child(7),
+    &:nth-child(8){
+        @media (min-width: 1120px){
+            display: block
+        };
+    }
+  }
+  &__category-button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 240px;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  &__go{
+    position: absolute;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/go.svg");
+  }
+  &__logo{
+    position: absolute;
+    left:16px;
+  }
+}

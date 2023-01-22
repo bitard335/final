@@ -1,17 +1,23 @@
-$bgColor: #24292e;
-$text: #fff;
+@import 'variables.scss';
+@import 'reset.scss';
+@import '../css/font-loader.css';
+@import 'base.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import '../blocks/page/page.scss';
+@import '../blocks/page/page-aside/pop-up/menu/menu.scss';
+@import '../blocks/page/page-aside/pop-up/feedback/feedback.scss';
+@import '../blocks/page/page-aside/pop-up/call/call.scss';
+@import '../blocks/page/page-aside/pop-up/pop-up.scss';
+@import '../blocks/page/page-aside/page-aside.scss';
+@import '../blocks/page/page-main/page-main.scss';
+@import '../blocks/page/page-main/page-service/page-service.scss';
+@import '../blocks/page/page-main/page-service/repair-brand/repair-brand.scss';
+@import '../blocks/page/page-main/page-service/swiper/swiper.scss';
+@import '../blocks/page/page-main/page-service/repair-tech/repair-tech.scss';
+@import '../blocks/page/page-main/page-service-block/page-service-block.scss';
+@import '../blocks/page/page-main/page-footer/page-footer.scss';
+@import '../blocks/page/page-main/page-header/page-header.scss';
+@import '../blocks/show-all-button/show-all-button.scss';
+@import '../blocks/page/page-main/page-service/show-services-button/show-services-button.scss';
+@import '../buttons/int-button-style.scss';
+@import '../blocks/logo/logo.scss';
