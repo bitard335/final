@@ -6,6 +6,8 @@ import '../blocks/page/page-main/page-service-block/read-more-button/read-more-b
 import '../blocks/page/page-main/page-service/show-services-button/show-services-button.js'
 import '../blocks/page/page-main/page-service/swiper/swiper.js'
 import '../blocks/burger-button/burger-button.js'
+import '../blocks/call-button/call-button.js'
+import '../blocks/chat-button/chat-button.js'
 
 
 console.log('Index.js Works!')

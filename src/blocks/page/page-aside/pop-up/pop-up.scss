@@ -1,4 +1,9 @@
 .pop-up{
-  position: absolute;
-  left: 0;
+
+  &__left{
+    left: 0;
+  }
+  &__right{
+    right: 0;
+  }
 }

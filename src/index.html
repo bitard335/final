@@ -227,7 +227,7 @@
             </button>
           </div>
         </div>
-        <div class="page-service repair-pricelist">
+        <!-- <div class="page-service repair-pricelist">
           <header class="page-service__header repair-pricelist_header">
             <h2 class="page-service__title repair-pricelist__title"
               >Цены на услуги</h2
@@ -268,7 +268,7 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-        </div>
+        </div> -->
       </main>
       <aside class="page-aside">
         <div class="menu">
@@ -301,15 +301,12 @@
             <div class="menu__footer-buttons">
               <div
                 class="menu__footer-button call-button"
-                name="call"
               ></div>
               <div
                 class="menu__footer-button chat-button"
-                name="chat"
               ></div>
               <div
                 class="menu__footer-button profile-button"
-                name="profile"
               ></div>
             </div>
             <div class="menu__contact">
@@ -327,6 +324,51 @@
           </footer>
         </div>
       </aside>
+      <div class="modal feedback">
+        <div class="modal__header">
+          <div class="modal__header-item">
+            <div class="modal__button close-button"></div>
+          </div>
+        </div>
+          <div class="modal__title">Обратная связь</div>
+          <form action="" class="modal__form">
+            <input type="text" class="modal__input" placeholder="Имя">
+            <input type="text" class="modal__input" placeholder="Телефон">
+            <input type="text" class="modal__input" placeholder="Электронная почта">
+            <textarea type="text" class="modal__textarea" placeholder="Сообщение"></textarea>
+            <p class="modal__agreement-text">
+              Нажимая “отправить”, вы даете согласие на 
+              <mark class="modal__agreement-mark">обработку персональных данных</mark> 
+              и соглашаетесь с нашей 
+              <mark class="modal__agreement-mark">политикой конфиденциальности</mark>
+            </p>
+            <button class="modal__send-button send-button">
+              <div class="send-button__text">Отправить</div>
+              <img src='img/dropdown.svg' class="send-button__icon"></img>
+            </button>
+          </form>
+      </div>
+      <div class="modal call">
+        <div class="modal__header">
+          <div class="modal__header-item">
+            <div class="modal__button close-button"></div>
+          </div>
+        </div>
+          <div class="modal__title">Обратная связь</div>
+          <form action="" class="modal__form">
+            <input type="text" class="modal__input" placeholder="Телефон">
+            <p class="modal__agreement-text">
+              Нажимая “отправить”, вы даете согласие на 
+              <mark class="modal__agreement-mark">обработку персональных данных</mark> 
+              и соглашаетесь с нашей 
+              <mark class="modal__agreement-mark">политикой конфиденциальности</mark>
+            </p>
+            <button class="modal__send-button send-button">
+              <div class="send-button__text">Отправить</div>
+              <img src='img/dropdown.svg' class="send-button__icon"></img>
+            </button>
+          </form>
+      </div>
     </div>
   </body>
 </html>
