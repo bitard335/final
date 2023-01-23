@@ -8,6 +8,8 @@ import '../blocks/page/page-main/page-service/swiper/swiper.js'
 import '../blocks/burger-button/burger-button.js'
 import '../blocks/call-button/call-button.js'
 import '../blocks/chat-button/chat-button.js'
+import '../auto-height/auto-height.js'
+import '../col-head-width/col-head-width.js'
 
 
 console.log('Index.js Works!')

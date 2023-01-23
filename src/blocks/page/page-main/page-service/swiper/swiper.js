@@ -14,7 +14,7 @@ function mobileSlider(){
         if(width < 768 && el.dataset.mobile == "false"){
             swiper = new Swiper(el,{
             modules: [Pagination],
-            slidesPerView: 1.25,
+            slidesPerView: 'auto',
             spaceBetween: 16,
             loop:true,
             pagination: {

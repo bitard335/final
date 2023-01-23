@@ -1,6 +1,7 @@
 .repair-brand{
 
   &__services{
+
     &::after{
       content: "";
       position: absolute;
@@ -13,8 +14,6 @@
     }
   }
   &__list{
-    display: flex;
-
     @media (min-width: 768px){
         flex-wrap: wrap;
         flex-direction: row;
@@ -29,6 +28,14 @@
   }
   &__category{
     width: 240px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 240px;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: rgba(255, 255, 255, 1);
 
     @media (min-width: 768px){
         display: none;
@@ -41,33 +48,24 @@
     &:nth-child(5),
     &:nth-child(6){
         @media (min-width: 768px){
-            display: block;
+            display: flex;
         }
     }
     &:nth-child(7),
     &:nth-child(8){
         @media (min-width: 1120px){
-            display: block
+            display: flex;
         };
     }
   }
   &__category-button{
-    display: flex;
-    align-items: center;
-    position: relative;
-    min-width: 240px;
-    height: 72px;
-    border-radius: 6px;
-    border: 1px solid rgba(234, 234, 234, 1);
-    background-color: rgba(255, 255, 255, 1);
-  }
-  &__go{
     position: absolute;
     right: 16px;
     width: 40px;
     height: 40px;
     background-image: url("../img/go.svg");
   }
+
   &__logo{
     position: absolute;
     left:16px;

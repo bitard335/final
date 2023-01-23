@@ -1,4 +1,6 @@
 .send-button{
+  transition-duration: $animSpeed;
+  
   background-color: #FF3E79;
   border-radius: 16px;
   
@@ -7,6 +9,11 @@
 
   align-items: center;
   display: flex;
+
+  &:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
 
   &__text{
     font-size: 12px;
