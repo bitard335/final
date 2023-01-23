@@ -108,6 +108,7 @@
     width: 40px;
     height: 40px;
     margin-right: 17px;
+    }
 
     &__contact{
         display: flex;
@@ -127,9 +128,9 @@
         margin-right: 7px;
         margin-bottom: 32px;
 
-        &:active{
+        &--active{
             color: rgba(126, 126, 130, 1);
         }
     }
 }
-}
+
