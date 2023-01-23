@@ -300,8 +300,7 @@ body {
   order: 2; }
 
 .page-service {
-  overflow: hidden;
-  width: 320px; }
+  overflow: hidden; }
   @media (min-width: 768px) {
     .page-service {
       width: auto; } }
