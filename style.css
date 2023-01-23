@@ -84,7 +84,8 @@ button {
 body {
   font-family: "TT Lakes";
   background-color: #F8F8F8;
-  color: #7E7E82; }
+  color: #7E7E82;
+  overflow-x: hidden; }
 
 @media (min-width: 1120px) {
   .page {
@@ -98,18 +99,22 @@ body {
   position: absolute;
   top: 0;
   left: -100%;
+  box-sizing: border-box;
   color: #1B1C21;
   font-size: 16px;
   line-height: 24px;
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
-  box-sizing: border-box;
-  z-index: 10;
-  transition-duration: 200ms; }
+  z-index: 11;
+  transition-duration: 300ms; }
+  @media (min-width: 768px) {
+    .menu {
+      box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2); } }
   @media (min-width: 1120px) {
     .menu {
+      z-index: 1;
+      box-shadow: none;
       position: static; } }
   .menu__header {
     padding-top: 19px;
@@ -166,25 +171,123 @@ body {
     width: 40px;
     height: 40px;
     margin-right: 17px; }
-    .menu__header-item__contact, .menu__footer-button__contact, .menu__header-button__contact {
-      display: flex;
-      flex-direction: column; }
-    .menu__header-item__email, .menu__footer-button__email, .menu__header-button__email {
-      line-height: 24px;
-      margin-bottom: 12px; }
-    .menu__header-item__number, .menu__footer-button__number, .menu__header-button__number {
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 40px; }
-    .menu__header-item__language-select-button, .menu__footer-button__language-select-button, .menu__header-button__language-select-button {
-      margin-right: 7px;
-      margin-bottom: 32px; }
-      .menu__header-item__language-select-button:active, .menu__footer-button__language-select-button:active, .menu__header-button__language-select-button:active {
-        color: #7e7e82; }
+  .menu__contact {
+    display: flex;
+    flex-direction: column; }
+  .menu__email {
+    line-height: 24px;
+    margin-bottom: 12px; }
+  .menu__number {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px; }
+  .menu__language-select-button {
+    margin-right: 7px;
+    margin-bottom: 32px; }
+    .menu__language-select-button--active {
+      color: #7e7e82; }
 
-.pop-up {
+.modal {
+  width: 320px;
+  height: 676px;
+  padding-left: 16px;
+  padding-right: 16px;
   position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 300ms; }
+  @media (min-width: 768px) {
+    .modal {
+      box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2); } }
+  @media (min-width: 1120px) {
+    .modal {
+      position: fixed;
+      width: 440px;
+      height: 100%;
+      padding-left: 32px;
+      padding-right: 32px; } }
+  .modal__header {
+    margin-top: 24px; }
+  .modal__button {
+    width: 40px;
+    height: 40px; }
+  .modal__title {
+    color: #1B1C21;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 48px; }
+    .modal__title::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      display: inline-block;
+      content: "";
+      height: 40px;
+      width: 4px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: #41f6d7; }
+  .modal__form {
+    color: #B5B6BC;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px; }
+  .modal__input {
+    font-size: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    height: 48px;
+    border: #EAEAEA 1px solid;
+    border-radius: 8px; }
+  .modal__textarea {
+    padding-left: 16px;
+    padding-top: 16px;
+    height: 118px;
+    max-width: 376px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border: #EAEAEA 1px solid;
+    border-radius: 8px; }
+  .modal__agreement-text {
+    font-size: 14px;
+    line-height: 16px; }
+  .modal__agreement-mark {
+    color: #FF3E79;
+    background-color: transparent; }
+  .modal__send-button {
+    margin-top: 21px;
+    margin-left: auto; }
+
+.pop-up__left {
   left: 0; }
+
+.pop-up__right {
+  right: 0; }
+
+.send-button {
+  transition-duration: 300ms;
+  background-color: #FF3E79;
+  border-radius: 16px;
+  height: 32px;
+  width: 136px;
+  align-items: center;
+  display: flex; }
+  .send-button:hover {
+    transform: scale(1.1);
+    opacity: 0.5; }
+  .send-button__text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 24px; }
 
 .page-aside {
   display: flex;
@@ -222,7 +325,7 @@ body {
   .page-service__services {
     padding-left: 16px;
     padding-top: 16px;
-    padding-bottom: 50px;
+    padding-bottom: 24px;
     position: relative; }
     @media (min-width: 768px) {
       .page-service__services {
@@ -243,33 +346,21 @@ body {
   z-index: 1;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
 
-.repair-brand__list {
-  display: flex; }
-  @media (min-width: 768px) {
-    .repair-brand__list {
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 24px;
-      row-gap: 16px; } }
-  @media (min-width: 1120px) {
-    .repair-brand__list {
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 32px; } }
+@media (min-width: 768px) {
+  .repair-brand__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 16px; } }
+
+@media (min-width: 1120px) {
+  .repair-brand__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px; } }
 
 .repair-brand__category {
-  width: 240px; }
-  @media (min-width: 768px) {
-    .repair-brand__category {
-      display: none; } }
-  @media (min-width: 768px) {
-    .repair-brand__category:nth-child(1), .repair-brand__category:nth-child(2), .repair-brand__category:nth-child(3), .repair-brand__category:nth-child(4), .repair-brand__category:nth-child(5), .repair-brand__category:nth-child(6) {
-      display: block; } }
-  @media (min-width: 1120px) {
-    .repair-brand__category:nth-child(7), .repair-brand__category:nth-child(8) {
-      display: block; } }
-
-.repair-brand__category-button {
+  width: 240px;
   display: flex;
   align-items: center;
   position: relative;
@@ -278,8 +369,17 @@ body {
   border-radius: 6px;
   border: 1px solid #eaeaea;
   background-color: white; }
+  @media (min-width: 768px) {
+    .repair-brand__category {
+      display: none; } }
+  @media (min-width: 768px) {
+    .repair-brand__category:nth-child(1), .repair-brand__category:nth-child(2), .repair-brand__category:nth-child(3), .repair-brand__category:nth-child(4), .repair-brand__category:nth-child(5), .repair-brand__category:nth-child(6) {
+      display: flex; } }
+  @media (min-width: 1120px) {
+    .repair-brand__category:nth-child(7), .repair-brand__category:nth-child(8) {
+      display: flex; } }
 
-.repair-brand__go {
+.repair-brand__category-button {
   position: absolute;
   right: 16px;
   width: 40px;
@@ -330,7 +430,14 @@ body {
       gap: 32px; } }
 
 .repair-tech__category {
-  width: 240px; }
+  width: 240px;
+  display: flex;
+  position: relative;
+  min-width: 240px;
+  height: 160px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background-color: white; }
   @media (min-width: 768px) {
     .repair-tech__category {
       display: none; } }
@@ -342,26 +449,19 @@ body {
       display: block; } }
 
 .repair-tech__category-button {
-  display: flex;
-  position: relative;
-  min-width: 240px;
-  height: 160px;
-  border-radius: 6px;
-  border: 1px solid #eaeaea;
-  background-color: white; }
-
-.repair-tech__text {
-  position: absolute;
-  top: 16px;
-  left: 16px; }
-
-.repair-tech__go {
   position: absolute;
   bottom: 16px;
   right: 16px;
   width: 40px;
   height: 40px;
   background-image: url(./static/go.svg); }
+
+.repair-tech__text {
+  color: #1b1c21;
+  font-size: 16px;
+  position: absolute;
+  top: 16px;
+  left: 16px; }
 
 .page-service-block {
   height: auto;
@@ -484,7 +584,8 @@ body {
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  color: #1B1C21; }
+  color: #1B1C21;
+  z-index: 1; }
   @media (min-width: 768px) {
     .page-header {
       padding-left: 24px;
@@ -528,11 +629,9 @@ body {
         .page-header__item:nth-of-type(3)::before {
           font-weight: 500;
           content: "Оставить заявку";
-          margin-left: 0;
           margin-right: 8px;
           width: auto;
           height: 24px;
-          border-radius: 0;
           background-color: transparent; } }
     .page-header__item:nth-last-of-type(4) {
       margin-right: 0; }
@@ -564,7 +663,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  transition-duration: 300ms; }
+  .show-all-button:hover {
+    background-color: #FFFFFF;
+    border-radius: 30%; }
   .show-all-button__icon {
     transition: 0.3s;
     width: 24px;
@@ -618,6 +721,99 @@ body {
   min-width: 98px;
   height: 52px;
   background-image: url(./static/Group.svg); }
+
+.swiper-pagination {
+  position: static;
+  margin-top: 12px; }
+
+.fog-of-war {
+  position: fixed; }
+  .fog-of-war--active {
+    opacity: 0.96;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+
+.repair-pricelist__services::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  width: 24px;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+
+.repair-pricelist__list {
+  display: flex; }
+  @media (min-width: 768px) {
+    .repair-pricelist__list {
+      flex-wrap: wrap;
+      flex-direction: column; } }
+
+.repair-pricelist__category {
+  width: 260px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 6px;
+  background-color: white; }
+  @media (min-width: 768px) {
+    .repair-pricelist__category {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .repair-pricelist__category:nth-child(1)::after {
+        display: none; }
+      .repair-pricelist__category::after {
+        content: '';
+        height: 1px;
+        width: 97%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: #EAEAEA; } }
+  .repair-pricelist__category--title {
+    display: none; }
+    @media (min-width: 768px) {
+      .repair-pricelist__category--title {
+        display: flex; } }
+
+.repair-pricelist__col-title {
+  font-size: 14px; }
+
+.repair-pricelist__text {
+  display: flex;
+  color: #1b1c21;
+  font-size: 14px;
+  margin-bottom: 16px; }
+  @media (min-width: 768px) {
+    .repair-pricelist__text {
+      margin-bottom: 0; }
+      .repair-pricelist__text:nth-child(2) {
+        flex: 2; }
+      .repair-pricelist__text:nth-child(6), .repair-pricelist__text:nth-child(4) {
+        flex: 1; } }
+  .repair-pricelist__text--title {
+    color: #7E7E82;
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      .repair-pricelist__text--title {
+        display: none; } }
+
+.repair-pricelist__category-button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 120px; }
+  @media (min-width: 768px) {
+    .repair-pricelist__category-button {
+      position: static; } }
 
 
 /*# sourceMappingURL=style.css.map*/
