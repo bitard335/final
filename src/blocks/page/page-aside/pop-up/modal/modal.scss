@@ -16,6 +16,10 @@
 
   transition-duration: $animSpeed;
 
+  @media (min-width: 360px){
+    width: 360px;
+}
+
   @media (min-width: 768px){
     box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
   }
