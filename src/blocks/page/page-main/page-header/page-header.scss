@@ -3,15 +3,15 @@
   padding: 18px 16px;
   display: flex;
   align-items: center;
-  background-color: #FFFFFF;
-  color: #1B1C21;
+  background-color: $blockColor;
+  color: $mainText;
   z-index: 1;
 
-  @media (min-width: 768px){
+  @media (min-width: $medium){
     padding-left: 24px;
     padding-right: 24px;
   }
-  @media (min-width: 1120px){
+  @media (min-width: $large){
     padding-left: 33px;
     padding-top: 42px;
     justify-content: end;
@@ -26,21 +26,21 @@
 
     &:nth-of-type(1){
       &::after{
-        @media (min-width: 768px){
+        @media (min-width: $medium){
           display:inline-block;
           content: "";
           margin-left: 16px;
           margin-right: 5px;
           height:32px;
           width: 2px;
-          background-color: rgba(234, 234, 234, 1);
+          background-color: $decoration;
           border-radius: 30%;
         }
     }
     }
     &:nth-of-type(3),
     &:nth-of-type(4){
-      @media (min-width: 768px){
+      @media (min-width: $medium){
         order: 1;
       }
     }
@@ -52,13 +52,13 @@
         margin-right: 16px;
         height:32px;
         width: 2px;
-        background-color: rgba(234, 234, 234, 1);
+        background-color: $decoration;
         border-radius: 30%;
   
-        @media (min-width: 768px){
+        @media (min-width: $medium){
           margin-left:8px;
         }
-        @media (min-width: 1120px){
+        @media (min-width: $large){
           font-weight: 500;
           content:"Оставить заявку";
           margin-right: 8px;
@@ -73,7 +73,7 @@
     }
     &:nth-of-type(4){
       &::before{
-        @media (min-width: 1120px){
+        @media (min-width: $large){
           font-weight: 500;
           content: "Статус ремонта";
           margin-left:0;
@@ -82,7 +82,7 @@
     }
     }
     &:nth-of-type(5){
-      @media (min-width: 768px){
+      @media (min-width: $medium){
         margin-left: auto;;
       }
     }
@@ -90,7 +90,7 @@
     &:nth-of-type(6),
     &:nth-of-type(7){
       display: none;
-      @media (min-width: 768px){
+      @media (min-width: $medium){
         display: flex;
       }
     }
@@ -99,7 +99,7 @@
     &:nth-of-type(5),
     &:nth-of-type(6),
     &:nth-of-type(7){
-      @media (min-width: 1120px){
+      @media (min-width: $large){
         display: none;
       }
     }

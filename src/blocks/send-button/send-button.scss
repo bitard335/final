@@ -1,7 +1,7 @@
 .send-button{
   transition-duration: $animSpeed;
   
-  background-color: #FF3E79;
+  background-color: $buttonColor;
   border-radius: 16px;
   
   height: 32px;
@@ -18,7 +18,7 @@
   &__text{
     font-size: 12px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $blockColor;
     font-weight: bold;
 
     margin-left: 24px;

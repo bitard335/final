@@ -10,14 +10,14 @@
       width: 24px;
       height:100%;
       z-index: 1;
-      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      background: linear-gradient(270deg, $bgColor 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
   }
   &__list{
 
     display: flex;
 
-    @media (min-width: 768px){
+    @media (min-width: $medium){
       flex-wrap: wrap;
       flex-direction: column;
     }
@@ -33,9 +33,9 @@
     padding-bottom: 16px;
 
     border-radius: 6px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $categoryColor;
 
-    @media(min-width: 768px){
+    @media(min-width: $medium){
       width: auto;
       display: flex;
       flex-direction: row;
@@ -55,14 +55,14 @@
 
         top: 0;
         
-        background-color: #EAEAEA;
+        background-color: $categoryDivider;
       }
     }
   
     &--title{
       display: none;
 
-      @media (min-width: 768px){
+      @media (min-width: $medium){
         display: flex;
       }
     }
@@ -81,7 +81,7 @@
     
     margin-bottom: 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $medium) {
       margin-bottom: 0;
 
       &:nth-child(2){
@@ -95,10 +95,10 @@
     }
 
     &--title{
-      color: #7E7E82;
+      color: $text;
       font-size: 16px;
       
-      @media (min-width: 768px){
+      @media (min-width: $medium){
         display: none;
       }
     }
@@ -111,8 +111,51 @@
 
     width: 120px;
 
-    @media (min-width: 768px){
+    @media (min-width: $medium){
       position: static;
+    }
+  }
+
+  &__footer{
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+
+    padding: 0 16px;
+    padding-bottom: 40px;
+
+    @media(min-width: $medium){
+      width: 420px;
+      padding: 0 24px;
+      padding-bottom: 47px;
+    }
+    
+    @media(min-width: $large){
+      padding: 0 32px;
+      padding-bottom: 50px;
+    }
+  }
+  &__footer-item{
+    font-size: 14px;
+  }
+  &__footer-button{
+
+    position: relative;
+    font-size: 16px;
+    color: $mainText;
+    font-family: "TT Lakes";
+
+    &::before{
+      position: absolute;
+      right: -20px;
+      content: "";
+      width: 24px;
+      height: 24px;
+
+      background-image: url('../img/comOfferArrow.svg');
     }
   }
 }

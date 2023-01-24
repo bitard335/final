@@ -10,17 +10,17 @@
       width: 24px;
       height: 72px;
       z-index: 1;
-      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      background: linear-gradient(270deg, $bgColor 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
   }
   &__list{
-    @media (min-width: 768px){
+    @media (min-width: $medium){
         flex-wrap: wrap;
         flex-direction: row;
         gap:24px;
         row-gap: 16px;
     }
-    @media (min-width: 1120px){
+    @media (min-width: $large){
         flex-wrap: wrap;
         flex-direction: row;
         gap:32px;
@@ -34,10 +34,10 @@
     min-width: 240px;
     height: 72px;
     border-radius: 6px;
-    border: 1px solid rgba(234, 234, 234, 1);
-    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid $decoration;
+    background-color: $categoryColor;
 
-    @media (min-width: 768px){
+    @media (min-width: $medium){
         display: none;
     }
     
@@ -47,13 +47,13 @@
     &:nth-child(4),
     &:nth-child(5),
     &:nth-child(6){
-        @media (min-width: 768px){
+        @media (min-width: $medium){
             display: flex;
         }
     }
     &:nth-child(7),
     &:nth-child(8){
-        @media (min-width: 1120px){
+        @media (min-width: $large){
             display: flex;
         };
     }

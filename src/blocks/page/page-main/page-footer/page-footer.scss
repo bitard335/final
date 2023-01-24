@@ -1,0 +1,44 @@
+.page-footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  color: $text;
+
+  @media(min-width: $medium){
+    flex-direction: row;
+    padding: 0 24px;
+  }
+  @media(min-width: $large){
+    padding: 0 32px;
+  }
+
+  &::before{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+
+    background-color: $footerBefore;
+  }
+
+  &__item{
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media(min-width: $medium){
+
+      &:nth-child(1){
+        text-align: start;
+        flex:1;
+      }
+      &:nth-child(2){
+        text-align: center;
+        flex:1;
+      }
+      &:nth-child(3){
+        text-align: end;
+        flex:1;
+      }
+    }
+  }
+}

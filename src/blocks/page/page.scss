@@ -1,6 +1,6 @@
 .page{
   
-  @media (min-width: 1120px) {
+  @media (min-width: $large) {
     display: flex;
     flex-direction: row;
   }

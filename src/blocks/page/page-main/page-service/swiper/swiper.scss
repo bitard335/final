@@ -1,14 +1,14 @@
 
 .swiper-pagination{
   top: 70%;
-  @media (min-width: 768px){
+  @media (min-width: $medium){
       display: none;
   }
 }
 .swiper-pagination-bullet{
   width: 10px;
   height: 10px;
-  background-color: rgba(181, 182, 188, 1);
+  background-color: $swiperBulletColor;
   opacity: 0.5;
 }
 .swiper-pagination-bullet-active{

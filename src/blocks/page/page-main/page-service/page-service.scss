@@ -1,20 +1,20 @@
 .page-service{
     overflow: hidden;
 
-    @media (min-width: 768px){
+    @media (min-width: $small){
         width: auto;
     }
 
     &__header{
         padding-left: 16px;
-        background-color: #FFFFFF;
+        background-color: $blockColor;
         padding-bottom: 23px;
         padding-top: 21px;
     
-        @media (min-width: 768px){
+        @media (min-width: $small){
             padding: 24px;
         }
-        @media (min-width: 1120px){
+        @media (min-width: $large){
             padding: 24px 32px;
         }
     }
@@ -31,11 +31,11 @@
         padding-bottom: 24px;
         position: relative;
 
-        @media (min-width: 768px){
+        @media (min-width: $small){
             padding: 24px;
             padding-bottom: 42px;
           }
-          @media (min-width: 1120px){
+          @media (min-width: $large){
             padding: 24px 32px;
             padding-bottom: 53px;
           }      

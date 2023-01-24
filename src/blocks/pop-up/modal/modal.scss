@@ -7,7 +7,7 @@
   top: 0;
   right: -100%;
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $blockColor;
   box-sizing: border-box;
   z-index: 99;
 
@@ -16,15 +16,15 @@
 
   transition-duration: $animSpeed;
 
-  @media (min-width: 360px){
+  @media (min-width: $smallSecond){
     width: 360px;
 }
 
-  @media (min-width: 768px){
-    box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
+  @media (min-width: $medium){
+    box-shadow: -16px 0 52px 0 $shadow;
   }
 
-  @media (min-width: 1120px){
+  @media (min-width: $large){
     position: fixed;
 
     width: 440px;
@@ -43,7 +43,7 @@
     height: 40px;
   }
   &__title{
-    color: #1B1C21;
+    color: $mainText;
     font-size: 24px;
     font-weight: bold;
 
@@ -60,11 +60,11 @@
 
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      background-color: #41f6d7;
+      background-color: $beforeTitle;
     }
   }
   &__form{
-    color: #B5B6BC;
+    color: $inputTextColor;
 
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@
     margin-bottom: 16px;
     height: 48px;
 
-    border: #EAEAEA 1px solid;
+    border: $inputBorderColor 1px solid;
     border-radius: 8px;
   }
   &__textarea{
@@ -92,7 +92,7 @@
     font-size: 16px;
     margin-bottom: 16px;
 
-    border: #EAEAEA 1px solid;
+    border: $inputBorderColor 1px solid;
     border-radius: 8px;
   }
   
@@ -101,7 +101,7 @@
     line-height: 16px;
   }
   &__agreement-mark{
-    color: #FF3E79;
+    color: $modalAgreement;
     background-color: transparent;
   }
 
