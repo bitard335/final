@@ -87,7 +87,7 @@ body {
   color: #7E7E82;
   overflow-x: hidden; }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .page {
     display: flex;
     flex-direction: row; } }
@@ -105,13 +105,16 @@ body {
   line-height: 24px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #FFFFFF;
   z-index: 11;
   transition-duration: 300ms; }
+  @media (min-width: 360px) {
+    .menu {
+      width: 360px; } }
   @media (min-width: 768px) {
     .menu {
       box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2); } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .menu {
       z-index: 1;
       box-shadow: none;
@@ -122,13 +125,13 @@ body {
     padding-bottom: 46px;
     display: flex;
     align-items: center; }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .menu__header {
         padding-top: 30px; } }
   .menu__header-item:last-child {
     margin-right: 0;
     margin-left: auto; }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .menu__header-item:first-child {
       display: none; } }
   .menu__list {
@@ -155,7 +158,7 @@ body {
         width: 4px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        background-color: #41f6d7; }
+        background-color: #41F6D7; }
   .menu__footer {
     margin-top: 32px;
     display: flex;
@@ -185,7 +188,7 @@ body {
     margin-right: 7px;
     margin-bottom: 32px; }
     .menu__language-select-button--active {
-      color: #7e7e82; }
+      color: #7E7E82; }
 
 .modal {
   width: 320px;
@@ -195,16 +198,19 @@ body {
   position: absolute;
   top: 0;
   right: -100%;
-  background-color: white;
+  background-color: #FFFFFF;
   box-sizing: border-box;
   z-index: 99;
   display: flex;
   flex-direction: column;
   transition-duration: 300ms; }
+  @media (min-width: 360px) {
+    .modal {
+      width: 360px; } }
   @media (min-width: 768px) {
     .modal {
       box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2); } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .modal {
       position: fixed;
       width: 440px;
@@ -231,7 +237,7 @@ body {
       width: 4px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      background-color: #41f6d7; }
+      background-color: #41F6D7; }
   .modal__form {
     color: #B5B6BC;
     display: flex;
@@ -301,7 +307,7 @@ body {
 
 .page-service {
   overflow: hidden; }
-  @media (min-width: 768px) {
+  @media (min-width: 320px) {
     .page-service {
       width: auto; } }
   .page-service__header {
@@ -309,10 +315,10 @@ body {
     background-color: #FFFFFF;
     padding-bottom: 23px;
     padding-top: 21px; }
-    @media (min-width: 768px) {
+    @media (min-width: 320px) {
       .page-service__header {
         padding: 24px; } }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-service__header {
         padding: 24px 32px; } }
   .page-service__title {
@@ -326,11 +332,11 @@ body {
     padding-top: 16px;
     padding-bottom: 24px;
     position: relative; }
-    @media (min-width: 768px) {
+    @media (min-width: 320px) {
       .page-service__services {
         padding: 24px;
         padding-bottom: 42px; } }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-service__services {
         padding: 24px 32px;
         padding-bottom: 53px; } }
@@ -352,7 +358,7 @@ body {
     gap: 24px;
     row-gap: 16px; } }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .repair-brand__list {
     flex-wrap: wrap;
     flex-direction: row;
@@ -374,7 +380,7 @@ body {
   @media (min-width: 768px) {
     .repair-brand__category:nth-child(1), .repair-brand__category:nth-child(2), .repair-brand__category:nth-child(3), .repair-brand__category:nth-child(4), .repair-brand__category:nth-child(5), .repair-brand__category:nth-child(6) {
       display: flex; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .repair-brand__category:nth-child(7), .repair-brand__category:nth-child(8) {
       display: flex; } }
 
@@ -422,7 +428,7 @@ body {
       flex-direction: row;
       gap: 24px;
       row-gap: 16px; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .repair-tech__list {
       flex-wrap: wrap;
       flex-direction: row;
@@ -443,7 +449,7 @@ body {
   @media (min-width: 768px) {
     .repair-tech__category:nth-child(1), .repair-tech__category:nth-child(2), .repair-tech__category:nth-child(3) {
       display: block; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .repair-tech__category:nth-child(4) {
       display: block; } }
 
@@ -456,7 +462,7 @@ body {
   background-image: url(./static/go.svg); }
 
 .repair-tech__text {
-  color: #1b1c21;
+  color: #1B1C21;
   font-size: 16px;
   position: absolute;
   top: 16px;
@@ -467,11 +473,11 @@ body {
   padding-left: 16px;
   display: flex;
   flex-direction: column;
-  background-color: #f8f8f8; }
+  background-color: #FFFFFF; }
   @media (min-width: 768px) {
     .page-service-block {
       padding-left: 24px; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .page-service-block {
       padding-left: 33px;
       background-color: transparent;
@@ -484,7 +490,7 @@ body {
     list-style-type: none;
     display: flex;
     overflow: auto; }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-service-block__selectbox {
         flex-wrap: wrap; } }
     .page-service-block__selectbox::after {
@@ -494,7 +500,7 @@ body {
       width: 24px;
       height: 40px;
       background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
-      @media (min-width: 1120px) {
+      @media (min-width: 1366px) {
         .page-service-block__selectbox::after {
           display: none; } }
   .page-service-block__title {
@@ -504,7 +510,7 @@ body {
     line-height: 40px;
     margin-top: 24px;
     margin-bottom: 26px; }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-service-block__title {
         margin-top: 0; } }
     .page-service-block__title::before {
@@ -516,7 +522,7 @@ body {
       width: 4px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      background-color: #41f6d7; }
+      background-color: #41F6D7; }
   .page-service-block__button {
     color: #7e7e82;
     padding: 11px 16px;
@@ -558,7 +564,7 @@ body {
       @media (min-width: 768px) {
         .page-service-block__paragraph:nth-of-type(2) {
           display: inline-block; } }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-service-block__paragraph:nth-of-type(3) {
         display: inline-block; } }
   .page-service-block__image {
@@ -571,11 +577,42 @@ body {
         margin-left: 48px;
         width: 360px;
         height: 208px; } }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-service-block__image {
         width: 536px;
         height: 308px;
         margin-left: 35px; } }
+
+.page-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #7E7E82; }
+  @media (min-width: 768px) {
+    .page-footer {
+      flex-direction: row;
+      padding: 0 24px; } }
+  @media (min-width: 1366px) {
+    .page-footer {
+      padding: 0 32px; } }
+  .page-footer::before {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #D9FFF5; }
+  .page-footer__item {
+    text-align: center;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .page-footer__item:nth-child(1) {
+        text-align: start;
+        flex: 1; }
+      .page-footer__item:nth-child(2) {
+        text-align: center;
+        flex: 1; }
+      .page-footer__item:nth-child(3) {
+        text-align: end;
+        flex: 1; } }
 
 .page-header {
   max-height: 88px;
@@ -589,7 +626,7 @@ body {
     .page-header {
       padding-left: 24px;
       padding-right: 24px; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .page-header {
       padding-left: 33px;
       padding-top: 42px;
@@ -624,7 +661,7 @@ body {
       @media (min-width: 768px) {
         .page-header__item:nth-of-type(3)::before {
           margin-left: 8px; } }
-      @media (min-width: 1120px) {
+      @media (min-width: 1366px) {
         .page-header__item:nth-of-type(3)::before {
           font-weight: 500;
           content: "Оставить заявку";
@@ -634,7 +671,7 @@ body {
           background-color: transparent; } }
     .page-header__item:nth-last-of-type(4) {
       margin-right: 0; }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-header__item:nth-of-type(4)::before {
         font-weight: 500;
         content: "Статус ремонта";
@@ -648,7 +685,7 @@ body {
       @media (min-width: 768px) {
         .page-header__item:nth-of-type(5), .page-header__item:nth-of-type(6), .page-header__item:nth-of-type(7) {
           display: flex; } }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .page-header__item:nth-of-type(1), .page-header__item:nth-of-type(2), .page-header__item:nth-of-type(5), .page-header__item:nth-of-type(6), .page-header__item:nth-of-type(7) {
         display: none; } }
   .page-header__button {
@@ -729,7 +766,7 @@ body {
   position: fixed; }
   .fog-of-war--active {
     opacity: 0.96;
-    background-color: white;
+    background-color: #FFFFFF;
     bottom: 0;
     left: 0;
     top: 0;
@@ -813,6 +850,40 @@ body {
   @media (min-width: 768px) {
     .repair-pricelist__category-button {
       position: static; } }
+
+.repair-pricelist__footer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 24px;
+  padding: 0 16px;
+  padding-bottom: 40px; }
+  @media (min-width: 768px) {
+    .repair-pricelist__footer {
+      width: 420px;
+      padding: 0 24px;
+      padding-bottom: 47px; } }
+  @media (min-width: 1366px) {
+    .repair-pricelist__footer {
+      padding: 0 32px;
+      padding-bottom: 50px; } }
+
+.repair-pricelist__footer-item {
+  font-size: 14px; }
+
+.repair-pricelist__footer-button {
+  position: relative;
+  font-size: 16px;
+  color: #1B1C21;
+  font-family: "TT Lakes"; }
+  .repair-pricelist__footer-button::before {
+    position: absolute;
+    right: -20px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(./static/comOfferArrow.svg); }
 
 
 /*# sourceMappingURL=style.css.map*/
