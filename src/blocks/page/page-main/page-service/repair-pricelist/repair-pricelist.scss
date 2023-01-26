@@ -64,13 +64,13 @@
 
       @media (min-width: $medium){
         display: flex;
+        background-color: $bgColor;
       }
     }
   }
 
   &__col-title{
     font-size: 14px;
-
   }
 
   &__text{
@@ -97,7 +97,6 @@
     &--title{
       color: $text;
       font-size: 16px;
-      background-color: $bgColor;
       
       @media (min-width: $medium){
         display: none;
