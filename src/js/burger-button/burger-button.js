@@ -1,6 +1,6 @@
-let burgerButton = document.querySelector('.burger-button');
+let burgerButton = document.querySelector('.round-buttons--burger');
 let menu = document.querySelector('.menu');
-let closeButton = menu.querySelector('.close-button');
+let closeButton = menu.querySelector('.round-buttons--close');
 let fog = document.querySelector('.fog-of-war');
 
 if (window.innerWidth > 1120){

@@ -1,6 +1,6 @@
-let callButton = document.querySelectorAll('.call-button');
+let callButton = document.querySelectorAll('.round-buttons--call');
 let call = document.querySelector('.call');
-let closeButton = call.querySelector('.close-button')
+let closeButton = call.querySelector('.round-buttons--close')
 let fog = document.querySelector('.fog-of-war');
 
 

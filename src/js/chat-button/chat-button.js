@@ -1,6 +1,6 @@
-let feedbackButton = document.querySelectorAll('.chat-button');
+let feedbackButton = document.querySelectorAll('.round-buttons--chat');
 let feedback = document.querySelector('.feedback');
-let closeButton = feedback.querySelector('.close-button')
+let closeButton = feedback.querySelector('.round-buttons--close')
 let fog = document.querySelector('.fog-of-war');
 
 
