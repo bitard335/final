@@ -97,6 +97,7 @@
     &--title{
       color: $text;
       font-size: 16px;
+      background-color: $bgColor;
       
       @media (min-width: $medium){
         display: none;
