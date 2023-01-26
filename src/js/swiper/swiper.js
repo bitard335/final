@@ -4,8 +4,6 @@ let slider = document.querySelectorAll('.swiper');
 let width
 let swiper;
 
-console.log('slider.js Works!')
-console.log(slider);
 
 function mobileSlider(){
     width = window.innerWidth;
@@ -24,7 +22,6 @@ function mobileSlider(){
             })
             el.dataset.mobile = "true";
         } if (width >= 768 && el.dataset.mobile == "true"){
-            console.log('destroy')
             el.dataset.mobile = "false";
             if (el.classList.contains('swiper-initialized')) {
                 swiper.destroy();

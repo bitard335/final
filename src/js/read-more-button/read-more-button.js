@@ -1,7 +1,6 @@
 let service = document.querySelectorAll('.page-service-block__text');
 let isShowed = false;
 
-console.log('show-text')
 
 service.forEach((el) => {
   let button = el.querySelector('.show-all-text')
@@ -9,7 +8,6 @@ service.forEach((el) => {
   let buttonIcon = el.querySelector('.show-all-text__icon');
   let paragraph = el.querySelectorAll('.page-service-block__paragraph');
   button.addEventListener('click', function(evt) {
-    console.log('click')
     evt.preventDefault();
     if (!isShowed){
       isShowed = true;

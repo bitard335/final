@@ -12,4 +12,3 @@ import './auto-height/auto-height.js'
 import './col-head-width/col-head-width.js'
 
 
-console.log('Index.js Works!')

@@ -3,8 +3,6 @@ let feedback = document.querySelector('.feedback');
 let closeButton = feedback.querySelector('.close-button')
 let fog = document.querySelector('.fog-of-war');
 
-console.log(feedbackButton);
-
 
 feedbackButton.forEach((el) => {
   el.addEventListener('click', function(){

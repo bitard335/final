@@ -1,8 +1,6 @@
 let service = document.querySelectorAll('.page-service__services');
 let isShowed = false;
 
-console.log('show-services')
-
 service.forEach((el) => {
   
   if (!el.classList.contains('repair-pricelist__services')){
@@ -11,7 +9,6 @@ service.forEach((el) => {
     let buttonIcon = el.querySelector('.show-services-button__icon');
     let categories = el.querySelectorAll('.service-category');
     button.addEventListener('click', function(evt) {
-      console.log('click')
       evt.preventDefault();
       if (!isShowed){
         isShowed = true;

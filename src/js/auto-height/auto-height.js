@@ -15,5 +15,4 @@ declareModalHeight(size);
 window.addEventListener('resize', function(){
   size = document.documentElement.scrollHeight;
   declareModalHeight(size);
-  console.log('resizing')
 })
