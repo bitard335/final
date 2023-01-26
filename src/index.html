@@ -19,10 +19,14 @@
           </div>
           <div class="page-header__item logo"> </div>
           <div class="page-header__item">
-            <button class="page-header__button round-buttons round-buttons--repair"></button>
+            <label for="repair" class="page-header__label">Оставить заявку</label>
+            <button id="repair" class="page-header__button round-buttons round-buttons--repair">
+            </button>
           </div>
           <div class="page-header__item">
-            <button class="page-header__button round-buttons round-buttons--check"></button>
+            <label for="check" class="page-header__label">Статус ремонта</label>
+            <button id="check" class="page-header__button round-buttons round-buttons--check">
+            </button>
           </div>
           <div class="page-header__item">
             <button class="page-header__button round-buttons round-buttons--call"></button>
@@ -36,42 +40,44 @@
         </header>
         <div class="page-service-block">
           <h1 class="page-service-block__title">Услуги и сервисы</h1>
+        <nav class="page-service-block__nav">
           <ul class="page-service-block__selectbox">
             <li class="page-service-block__item"
-              ><button
-                class="page-service-block__button page-service-block__button--active"
-                >Ремонтируемые устройства</button
+              ><a href=""
+                class="page-service-block__link page-service-block__link--active"
+                >Ремонтируемые устройства</a
               ></li
             >
             <li class="page-service-block__item"
-              ><button class="page-service-block__button"
-                >Дополнительные услуги</button
+              ><a href="" class="page-service-block__link"
+                >Дополнительные услуги</a
               ></li
             >
             <li class="page-service-block__item"
-              ><button class="page-service-block__button"
-                >Ремонтируемые бренды</button
+              ><a href="" class="page-service-block__link"
+                >Ремонтируемые бренды</a
               ></li
             >
             <li class="page-service-block__item"
-              ><button class="page-service-block__button"
-                >Цены на услуги</button
+              ><a href="" class="page-service-block__link"
+                >Цены на услуги</a
               ></li
             >
             <li class="page-service-block__item"
-              ><button class="page-service-block__button"
-                >Адреса сервисных центров</button
+              ><a href="" class="page-service-block__link"
+                >Адреса сервисных центров</a
               ></li
             >
             <li class="page-service-block__item"
-              ><button class="page-service-block__button"
-                >Специальные цены</button
+              ><a href="" class="page-service-block__link"
+                >Специальные цены</a
               ></li
             >
             <li class="page-service-block__item"
-              ><button class="page-service-block__button">Отзывы</button></li
+              ><a href="" class="page-service-block__link">Отзывы</a></li
             >
           </ul>
+        </nav>
           <div class="page-service-block__about">
             <div class="page-service-block__text">
               <p class="page-service-block__paragraph"
@@ -118,66 +124,84 @@
               <li class="repair-brand__category  swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/lenovo.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/samsung.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/apple.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/viewsonic.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/bosch.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/hp.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/acer.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/sony.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/lenovo.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/samsung.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-brand__category service-category swiper-slide"
                 >
                   <img class="repair-brand__logo" src="img/apple.svg" />
-                  <button class="repair-brand__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
             </ul>
             <div class="swiper-pagination"></div>
             <button class="show-all-button show-services-button">
-              <img
-                src="img/expand.svg"
-                class="show-all-button__icon show-services-button__icon"
-                alt="expand"
-              />
+              <span class="show-all-button__icon show-services-button__icon"></span>
               <span class="show-services-button__text"> Показать все </span>
             </button>
           </div>
@@ -194,41 +218,49 @@
               <li class="repair-tech__category swiper-slide"
                 >
                   <span class="repair-tech__text">Ремонт ноутбуков</span>
-                  <button class="repair-tech__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
               <li class="repair-tech__category service-category swiper-slide"
                 >                  
                 <span class="repair-tech__text">Ремонт планшетов</span>
-                <button class="repair-tech__category-button"></button
+                <button class="category-button">
+                  <span class="category-button__icon"></span>  
+                </button
               ></li>
               <li class="repair-tech__category service-category swiper-slide"
                 >
                 <span class="repair-tech__text">Ремонт ноутбуков</span>
-                <button class="repair-tech__category-button"></button
+                <button class="category-button">
+                  <span class="category-button__icon"></span>  
+                </button
               ></li>
               <li class="repair-tech__category service-category swiper-slide"
                 >
                 <span class="repair-tech__text">Ремонт ПК</span>
-                <button class="repair-tech__category-button"></button
+                <button class="category-button">
+                  <span class="category-button__icon"></span>  
+                </button
               ></li>
               <li class="repair-tech__category service-category swiper-slide"
                 >
                 <span class="repair-tech__text">Ремонт мониторов</span>
-                <button class="repair-tech__category-button"></button
+                <button class="category-button">
+                  <span class="category-button__icon"></span>  
+                </button
               ></li>
               <li class="repair-tech__category service-category swiper-slide"
                 >
                   <span class="repair-tech__text">Ремонт телефонов</span>
-                  <button class="repair-tech__category-button"></button
+                  <button class="category-button">
+                    <span class="category-button__icon"></span>  
+                  </button
               ></li>
             </ul>
             <div class="swiper-pagination"></div>
             <button class="show-all-button show-services-button">
-              <img
-                src="img/expand.svg"
-                class="show-all-button__icon show-services-button__icon"
-                alt="expand"
-              />
+              <span class="show-all-button__icon show-services-button__icon"></span>
               <span class="show-services-button__text"> Показать все </span>
             </button>
           </div>
@@ -257,7 +289,7 @@
                   <span class="repair-pricelist__text">30 мин</span>
                   <button class="repair-pricelist__category-button send-button">
                     <div class="send-button__text">Заказать</div>
-                    <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+                    <span class="send-button__icon"></span>
                   </button>
               </li>
               <li class="repair-pricelist__category  swiper-slide"
@@ -270,7 +302,7 @@
                 <span class="repair-pricelist__text">30-120 мин</span>
                 <button class="repair-pricelist__category-button send-button">
                   <div class="send-button__text">Заказать</div>
-                  <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+                  <span class="send-button__icon"></span>
                 </button>
               </li>
               <li class="repair-pricelist__category  swiper-slide"
@@ -283,7 +315,7 @@
                 <span class="repair-pricelist__text">30-120 мин</span>
                 <button class="repair-pricelist__category-button send-button">
                   <div class="send-button__text">Заказать</div>
-                  <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+                  <span class="send-button__icon"></span>
                 </button>
               </li>
               <li class="repair-pricelist__category  swiper-slide"
@@ -296,7 +328,7 @@
                 <span class="repair-pricelist__text">30-120 мин</span>
                 <button class="repair-pricelist__category-button send-button">
                   <div class="send-button__text">Заказать</div>
-                  <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+                  <span class="send-button__icon"></span>
                 </button>
               </li>
               <li class="repair-pricelist__category  swiper-slide"
@@ -309,7 +341,7 @@
                 <span class="repair-pricelist__text">30-120 мин</span>
                 <button class="repair-pricelist__category-button send-button">
                   <div class="send-button__text">Заказать</div>
-                  <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+                  <span class="send-button__icon"></span>
                 </button>
               </li>
               <li class="repair-pricelist__category  swiper-slide"
@@ -322,7 +354,7 @@
                 <span class="repair-pricelist__text">30-120 мин</span>
                 <button class="repair-pricelist__category-button send-button">
                   <div class="send-button__text">Заказать</div>
-                  <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+                  <span class="send-button__icon"></span>
                 </button>
               </li>
             </ul>
@@ -360,18 +392,36 @@
               ></button>
             </div>
           </header>
-          <ul class="menu__list">
-            <li class="menu__list-item menu__list-item--active"
-              >Ремонт техники</li
-            >
-            <li class="menu__list-item">Услуги и сервисы</li>
-            <li class="menu__list-item">Корпоративным клиентам</li>
-            <li class="menu__list-item">Продавцам техники</li>
-            <li class="menu__list-item">Партнерам</li>
-            <li class="menu__list-item">Производителям</li>
-            <li class="menu__list-item">Наши сервисные центры</li>
-            <li class="menu__list-item">Контакты</li>
-          </ul>
+          
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__list-item menu__list-item--active">
+                <a href="" class="menu__link">Ремонт техники</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Услуги и сервисы</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Корпоративным клиентам</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Продавцам техники</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Партнерам</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Производителям</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Наши сервисные центры</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
           <footer class="menu__footer">
             <div class="menu__footer-buttons">
               <div
@@ -385,17 +435,25 @@
               ></div>
             </div>
             <div class="menu__contact">
-              <span class="menu__email">mail@cps.com</span>
-              <span class="menu__number">8 800 890 8900</span>
+              <a href="mailto:mail@cps.com" class="menu__email">mail@cps.com</a>
+              <a href="tel:+88008908900" class="menu__number">8 800 890 8900</a>
             </div>
-            <div class="menu__language-select">
-              <button
-                class="menu__language-select-button menu__language-select-button--active"
-                >RU</button
-              >
-              <button class="menu__language-select-button">EN</button>
-              <button class="menu__language-select-button">CH</button>
-            </div>
+            <form class="menu__language-form">
+              <div>
+                <label class="menu__language-label">
+                  <input name="language" value="ru" type="radio" class="menu__language-radio">
+                  <span class="menu__language-text">RU</span>
+                </label>
+                <label class="menu__language-label">
+                  <input name="language" value="en" type="radio" class="menu__language-radio">
+                  <span class="menu__language-text">EN</span>
+                </label>
+                <label class="menu__language-label">
+                  <input name="language" value="ch" type="radio" class="menu__language-radio">
+                  <span class="menu__language-text">CH</span>
+                </label>
+              </div>
+            </form>
           </footer>
         </div>
       </aside>
@@ -419,7 +477,7 @@
             </p>
             <button class="modal__send-button send-button">
               <div class="send-button__text">Отправить</div>
-              <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+              <span class="send-button__icon"></span>
             </button>
           </form>
       </div>
@@ -440,7 +498,7 @@
             </p>
             <button class="modal__send-button send-button">
               <div class="send-button__text">Отправить</div>
-              <img src='img/dropdown.svg' class="send-button__icon" alt="arrow"></img>
+              <span class="send-button__icon"></span>
             </button>
           </form>
       </div>

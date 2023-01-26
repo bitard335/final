@@ -1,4 +1,6 @@
 .send-button{
+  position: relative;
+
   transition-duration: $animSpeed;
   
   background-color: $buttonColor;
@@ -23,5 +25,12 @@
 
     margin-left: 24px;
 
+  }
+
+  &__icon{
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../img/dropdown.svg');
   }
 }

@@ -59,3 +59,14 @@ button {
   padding: 0px;
   background-color: transparent;
 }
+
+a {
+  text-decoration: none;
+
+  &:link{
+    color: inherit;
+  }
+  &:visited{
+    color:inherit;
+  }
+}

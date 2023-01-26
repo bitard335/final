@@ -17,12 +17,17 @@
     margin-bottom: 49px;
   }
 
+  &__nav{
+    overflow: scroll;
+
+    @media(min-width: $large){
+      overflow: visible;
+    }
+  }
   &__selectbox{
-    padding:0;
-    margin: 0;
+
     list-style-type: none;
     display: flex;
-    overflow: auto;
 
     @media (min-width:  $large){
       flex-wrap: wrap;
@@ -67,7 +72,10 @@
       background-color: $beforeTitle;
     }
   }
-  &__button{
+
+  &__link{
+    display: inline-block;
+
     color:rgba(126, 126, 130, 1);
     padding:11px 16px;
     white-space: nowrap;
