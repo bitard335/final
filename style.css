@@ -804,7 +804,7 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center; }
-      .repair-pricelist__category:nth-child(1)::after {
+      .repair-pricelist__category:nth-child(1)::after, .repair-pricelist__category:nth-child(2)::after {
         display: none; }
       .repair-pricelist__category::after {
         content: '';
